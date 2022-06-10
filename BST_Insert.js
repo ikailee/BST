@@ -30,14 +30,14 @@ class BST {
                     return this;
                 } 
 
-                current.left = newNode;
+                current = current.left;
             } else {
                 if (!current.right) {
                     current.right = newNode;
                     return this;
                 } 
 
-                current.right = newNode;
+                current = current.right;
             }
         }
     }

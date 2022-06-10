@@ -26,8 +26,7 @@ class BST {
             node.right = this.removeNode(node.right, value);
             return node;
         } else {
-            if (!node.left && !node.right)
-            {
+            if (!node.left && !node.right) {
                 return null;
             } else if (!node.left) {
                 return currentNode.right;
